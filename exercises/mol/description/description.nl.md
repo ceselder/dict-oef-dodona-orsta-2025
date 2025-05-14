@@ -1,4 +1,4 @@
-# Python Oefening 2: De Mol - Rood of Groen?
+# Rood of Groen?
 
 Na het tellen van de punten in De Mol is het moment suprême aangebroken: de eliminatietest! Kandidaat na kandidaat hoort of hun antwoorden 'groen' zijn (ze mogen blijven) of 'rood' (ze liggen eruit). Dit hangt af van het aantal punten dat ze hebben gescoord ten opzichte van een minimum aantal punten dat nodig is om door te gaan.
 
