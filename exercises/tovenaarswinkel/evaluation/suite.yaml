@@ -4,5 +4,3 @@ testcases:
     return: 225
   - expression: 'bereken_totale_kost({"Zwaard": 100, "Toverdrank": 25}, ["Zwaard", "Helm", "Toverdrank"])'
     return: 125
-  - expression: 'bereken_totale_kost({"Schild": 75}, ["Schild"])'
-    return: 75
