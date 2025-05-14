@@ -14,3 +14,5 @@ Schrijf een Python-functie met de naam `bereken_totale_kost` die twee argumenten
 De functie moet de totale kostprijs berekenen van alle items op de `boodschappenlijst` op basis van de `prijzenlijst`.
 
 De functie moet de totale kostprijs als een getal teruggeven.
+
+**Hint: De ideale oplossing is slechts 5 lijntjes!**

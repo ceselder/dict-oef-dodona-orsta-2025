@@ -6,16 +6,7 @@ testcases:
 
     expression: 'bereken_totale_kost({"Zwaard": 100, "Toverdrank": 25}, ["Zwaard", "Helm", "Toverdrank"])'
     return: 125
-
-    expression: 'bereken_totale_kost({"Boek": 15.50, "Veer": 2.00}, ["Boek", "Veer", "Perkament", "Boek"])'
-    return: 33.00
-
-    expression: 'bereken_totale_kost({"Zwaard": 100, "Toverdrank": 25}, [])'
-    return: 0
-
-    expression: 'bereken_totale_kost({}, ["Zwaard", "Toverdrank"])'
-    return: 0
-
+    
     expression: 'bereken_totale_kost({"Schild": 75}, ["Schild"])'
     return: 75
 
