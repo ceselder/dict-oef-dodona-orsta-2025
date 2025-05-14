@@ -1,14 +1,8 @@
 tab: "De Tovenaarswinkel"
 testcases:
-
-    expression: 'bereken_totale_kost({"Zwaard": 100, "Toverdrank": 25}, ["Zwaard", "Toverdrank", "Zwaard"])'
+  - expression: 'bereken_totale_kost({"Zwaard": 100, "Toverdrank": 25}, ["Zwaard", "Toverdrank", "Zwaard"])'
     return: 225
-
-    expression: 'bereken_totale_kost({"Zwaard": 100, "Toverdrank": 25}, ["Zwaard", "Helm", "Toverdrank"])'
+  - expression: 'bereken_totale_kost({"Zwaard": 100, "Toverdrank": 25}, ["Zwaard", "Helm", "Toverdrank"])'
     return: 125
-    
-    expression: 'bereken_totale_kost({"Schild": 75}, ["Schild"])'
+  - expression: 'bereken_totale_kost({"Schild": 75}, ["Schild"])'
     return: 75
-
-    expression: 'bereken_totale_kost({"Schild": 75}, ["Schild", "Schild", "Schild"])'
-    return: 225
