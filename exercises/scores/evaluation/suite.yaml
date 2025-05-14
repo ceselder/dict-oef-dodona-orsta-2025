@@ -1,4 +1,8 @@
 - tab: "scores"
   testcases:
-    - expression: "print(punten)"
-      return: "{'Sarah': 14, 'Els': 18, 'Pedro': 9}"
+    - expression: "hoeveel(Sarah)"
+      return: 14
+    - expression: "hoeveel(Els)"
+      return: 18
+    - expression: "hoeveel(Pedro)"
+      return: 9
