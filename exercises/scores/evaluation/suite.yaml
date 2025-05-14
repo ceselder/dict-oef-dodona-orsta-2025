@@ -1,0 +1,4 @@
+- tab: "echo"
+  testcases:
+    - expression: "punten"
+      return: "{'Sarah': 14, 'Els': 18, 'Pedro': 9}"
