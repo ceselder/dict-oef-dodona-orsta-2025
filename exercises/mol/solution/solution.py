@@ -12,7 +12,6 @@
       return: "ROOD"
     - expression: 'rood_of_groen({"Sarah": 14, "Els": 18, "Pedro": 9, "Lucas": 12, "Fien": 16}, "Els", 19)' # Els heeft 18, 18 < 19 is ROOD
       return: "ROOD"
-
     - expression: 'rood_of_groen({"Sarah": 14, "Els": 18, "Pedro": 9, "Lucas": 12, "Fien": 16}, "Sarah", 14)' # Gelijk aan minimum
       return: "GROEN"
     - expression: 'rood_of_groen({"Sarah": 14, "Els": 18, "Pedro": 9, "Lucas": 12, "Fien": 16}, "Sarah", 10)' # Boven minimum
