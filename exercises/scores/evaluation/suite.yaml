@@ -1,4 +1,4 @@
-- tab: "echo"
+- tab: "scores"
   testcases:
     - expression: "print(punten)"
       return: "{'Sarah': 14, 'Els': 18, 'Pedro': 9}"
