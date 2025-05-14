@@ -2,5 +2,15 @@
   testcases:
     - expression: 'bereken_totale_kost({"Zwaard": 100, "Toverdrank": 25}, ["Zwaard", "Toverdrank", "Zwaard"])'
       return: 225
-    - expression: 'bereken_totale_kost({"Zwaard": 100, "Toverdrank": 25}, ["Zwaard", "Helm", "Toverdrank"])'
+    - expression: 'bereken_totale_kost({"Zwaard": 100, "Toverdrank": 25}, ["Zwaard", "Toverdrank"])'
       return: 125
+    - expression: 'bereken_totale_kost({"Schild": 75}, ["Schild"])'
+      return: 75
+    - expression: 'bereken_totale_kost({"Zwaard": 100, "Toverdrank": 25, "Schild": 75}, ["Zwaard", "Toverdrank", "Schild"])'
+      return: 200
+    - expression: 'bereken_totale_kost({"Toverstaf": 150, "Hoed": 50}, ["Toverstaf", "Hoed", "Toverstaf", "Hoed"])'
+      return: 400
+    - expression: "bereken_totale_kost({}, [])"
+      return: 0
+    - expression: 'bereken_totale_kost({"Boek": 30}, [])'
+      return: 0
