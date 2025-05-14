@@ -1,0 +1,26 @@
+- tab: "Vrijstelling Check"
+  testcases:
+    - expression: 'rood_of_groen(punten, "Sarah", 15)'
+      return: "ROOD"
+    - expression: 'rood_of_groen(punten, "Pedro", 10)'
+      return: "ROOD"
+    - expression: 'rood_of_groen(punten, "Lucas", 13)'
+      return: "ROOD"
+    - expression: 'rood_of_groen(punten, "Els", 19)'
+      return: "ROOD"
+    - expression: 'rood_of_groen(punten, "Sarah", 14)'
+      return: "GROEN"
+    - expression: 'rood_of_groen(punten, "Sarah", 10)'
+      return: "GROEN"
+    - expression: 'rood_of_groen(punten, "Els", 18)'
+      return: "GROEN"
+    - expression: 'rood_of_groen(punten, "Els", 17)'
+      return: "GROEN"
+    - expression: 'rood_of_groen(punten, "Pedro", 9)'
+      return: "GROEN"
+    - expression: 'rood_of_groen(punten, "Pedro", 5)'
+      return: "GROEN"
+    - expression: 'rood_of_groen(punten, "Fien", 16)'
+      return: "GROEN"
+    - expression: 'rood_of_groen(punten, "Lucas", 12)'
+      return: "GROEN"

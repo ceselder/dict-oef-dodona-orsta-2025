@@ -15,4 +15,4 @@ De functie moet de totale kostprijs berekenen van alle items op de `boodschappen
 
 De functie moet de totale kostprijs als een getal teruggeven.
 
-**Hint: De ideale oplossing is slechts 5 lijntjes!**
+**Hint:** De ideale oplossing is slechts **5 lijntjes!**
