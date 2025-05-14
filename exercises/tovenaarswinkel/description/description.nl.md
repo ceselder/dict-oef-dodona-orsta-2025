@@ -8,11 +8,9 @@ Elke dag komen er avonturiers met een boodschappenlijstje. Dit lijstje is gewoon
 
 Schrijf een Python-functie met de naam `bereken_totale_kost` die twee argumenten accepteert:
 
-1.  `prijzenlijst`: Een verzameling die de prijzen van de items bevat. De namen van de items zijn de sleutels en de prijzen zijn de waarden.
+1.  `prijzenlijst`: Een **dictionary** die voor elk item een prijs bevat. De namen van de items zijn de sleutels en de prijzen zijn de waarden. (voorbeeld: { "zwaard": 10, "schild", 15 })
 2.  `boodschappenlijst`: Een lijst met de namen van de items die de klant wil kopen.
 
 De functie moet de totale kostprijs berekenen van alle items op de `boodschappenlijst` op basis van de `prijzenlijst`.
 
-**Belangrijke opmerking:** Als een item op de `boodschappenlijst` _niet_ voorkomt in de `prijzenlijst`, kost dat item 0 (het wordt misschien ergens anders gekocht of is gratis).
-
-De functie moet de totale kostprijs als een getal (integer of float, afhankelijk van de prijzen) teruggeven.
+De functie moet de totale kostprijs als een getal teruggeven.
