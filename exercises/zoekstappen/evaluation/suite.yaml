@@ -50,7 +50,7 @@
       stdout: |
         20
 
-    - expression: "zoekstappen([10, 20, 20, 30, 40], 10)"
+    - expression: "zoekstappen([10, 20, 30, 40], 10)"
       stdout: |
         20
         10
