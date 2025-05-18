@@ -1,20 +1,77 @@
-- tab: "Binair Zoeken - Getal bij Naam"
+# suite.yaml
+- tab: "Zoekstappen - Stdout Testen"
   testcases:
-    - expression: 'hoeveel(naam_getal_paren, "Sarah")'
-      return: 14
-    - expression: 'hoeveel(naam_getal_paren, "Els")'
-      return: 18
-    - expression: 'hoeveel(naam_getal_paren, "Pedro")'
-      return: 9
-    - expression: 'hoeveel(naam_getal_paren, "Jan")'
-      return: 32
-    - expression: 'hoeveel(naam_getal_paren, "Ben")'
-      return: 12
-    - expression: 'hoeveel(naam_getal_paren, "Fatima")'
-      return: 30
-    - expression: 'hoeveel(naam_getal_paren, "Mohammed")'
-      return: 64
-    - expression: 'hoeveel(naam_getal_paren, "OnbestaandeNaam")'
-      return: 0
-    - expression: 'hoeveel(naam_getal_paren, "Pieter")'
-      return: 0
+    - description: "Lege lijst"
+      expression: "zoekstappen([], 10)"
+      stdout: "" # Geen iteraties, dus niets geprint
+
+    - description: "Lijst met 1 element (gevonden)"
+      expression: "zoekstappen([20], 20)"
+      stdout: "" # right-left > 1 is 1 > 1 (False), dus loop draait niet
+
+    - description: "Lijst met 1 element (niet gevonden)"
+      expression: "zoekstappen([20], 10)"
+      stdout: "" # right-left > 1 is 1 > 1 (False), dus loop draait niet
+
+    - description: "Oneven aantal elementen - Zoekgetal in het midden"
+      expression: "zoekstappen([10, 20, 30, 40, 50], 30)"
+      stdout: |
+        30
+        # De loop stopt na de eerste stap omdat 30 gevonden wordt
+
+    - description: "Oneven aantal elementen - Zoekgetal aan begin"
+      expression: "zoekstappen([10, 20, 30, 40, 50], 10)"
+      stdout: |
+        30
+        20
+        # Zoekt eerst in [0, 5), midden=2 (30). Gaat naar [0, 2), midden=1 (20). Gevonden.
+
+    - description: "Oneven aantal elementen - Zoekgetal aan eind"
+      expression: "zoekstappen([10, 20, 30, 40, 50], 50)"
+      stdout: |
+        30
+        40
+        50
+        # Zoekt in [0, 5), midden=2 (30). Gaat naar [2, 5), midden=3 (40). Gaat naar [3, 5), midden=4 (50). Gevonden.
+
+    - description: "Even aantal elementen - Zoekgetal gevonden"
+      expression: "zoekstappen([10, 20, 30, 40], 20)"
+      stdout: |
+        30
+        20
+        # Zoekt in [0, 4), midden=2 (30). Gaat naar [0, 2), midden=1 (20). Gevonden.
+
+    - description: "Even aantal elementen - Zoekgetal niet gevonden (tussen elementen)"
+      expression: "zoekstappen([10, 20, 30, 40], 25)"
+      stdout: |
+        30
+        20
+        # Zoekt in [0, 4), midden=2 (30). Gaat naar [0, 2), midden=1 (20). right-left wordt 1, loop stopt.
+
+    - description: "Oneven aantal elementen - Zoekgetal niet gevonden (kleiner dan alles)"
+      expression: "zoekstappen([10, 20, 30, 40, 50], 5)"
+      stdout: |
+        30
+        20
+        # Zoekt in [0, 5), midden=2 (30). Gaat naar [0, 2), midden=1 (20). right-left wordt 1, loop stopt.
+
+    - description: "Oneven aantal elementen - Zoekgetal niet gevonden (groter dan alles)"
+      expression: "zoekstappen([10, 20, 30, 40, 50], 55)"
+      stdout: |
+        30
+        40
+        50
+        # Zoekt in [0, 5), midden=2 (30). Gaat naar [2, 5), midden=3 (40). Gaat naar [3, 5), midden=4 (50). right-left wordt 1, loop stopt.
+
+    - description: "Lijst met duplicaten - Zoekgetal is duplicaat"
+      expression: "zoekstappen([10, 20, 20, 30, 40], 20)"
+      stdout: |
+        20
+        # Zoekt in [0, 5), midden=2 (20). Gevonden. (Merk op dat de specifieke midden berekening hier index 2 vindt)
+
+    - description: "Lijst met duplicaten - Zoekgetal voor duplicaat"
+      expression: "zoekstappen([10, 20, 20, 30, 40], 10)"
+      stdout: |
+        20
+        10
+        # Zoekt in [0, 5), midden=2 (20). Gaat naar [0, 2), midden=1 (10). Gevonden.
