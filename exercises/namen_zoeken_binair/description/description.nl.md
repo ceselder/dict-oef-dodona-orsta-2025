@@ -13,7 +13,7 @@ interne_data = [
     (5, "Adam"), (6, "Thomas"), (7, "Amber"), (8, "Daan"), (9, "Pedro"),
     (10, "Mila"), (11, "Emma"), (12, "Ben"), (13, "Max"), (14, "Finn"),
     (14, "Sarah"), (15, "David"), (16, "Liam"), (17, "Ian"), (18, "Els"),
-    (18, "Yara"), (19, "Bram"), (20, "Luna"), (21, "Noah"), (22, "Hannah"),
+    (18, "Yara"), (19, "Bram"), (20, "Luna"), (21, "Noah"),
     (23, "Charlotte"), (24, "Olivia"), (25, "Julia"), (26, "Sam"), (27, "Elias"),
     (28, "Maria"), (29, "Sofia"), (30, "Fatima"), (31, "Roos"), (32, "Jan"),
     (33, "Omar"), (35, "Zoe"), (64, "Mohammed")
@@ -42,7 +42,7 @@ Als `gezocht_getal` gelijk is aan `40`, dan moet je functie `"Niet gevonden"` te
         (5, "Adam"), (6, "Thomas"), (7, "Amber"), (8, "Daan"), (9, "Pedro"),
         (10, "Mila"), (11, "Emma"), (12, "Ben"), (13, "Max"), (14, "Finn"),
         (14, "Sarah"), (15, "David"), (16, "Liam"), (17, "Ian"), (18, "Els"),
-        (18, "Yara"), (19, "Bram"), (20, "Luna"), (21, "Noah"), (22, "Hannah"),
+        (18, "Yara"), (19, "Bram"), (20, "Luna"), (21, "Noah"),
         (23, "Charlotte"), (24, "Olivia"), (25, "Julia"), (26, "Sam"), (27, "Elias"),
         (28, "Maria"), (29, "Sofia"), (30, "Fatima"), (31, "Roos"), (32, "Jan"),
         (33, "Omar"), (35, "Zoe"), (64, "Mohammed")

@@ -14,3 +14,5 @@
       return: "Fatima"
     - expression: "hoeveel(64)"
       return: "Mohammed"
+    - expression: "hoeveel(22)"
+      return: "Niet Gevonden"
