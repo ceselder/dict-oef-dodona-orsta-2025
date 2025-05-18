@@ -1,0 +1,18 @@
+{
+  "description": {
+    "names": {
+      "nl": "Zoeken Met Stappen"
+    }
+  },
+  "evaluation": {
+    "handler": "tested",
+    "test_suite": "suite.yaml"
+  },
+  "programming_language": "python",
+  "access": "private",
+  "internals": {
+    "token": "9sA4fzWcVVgTwt5uZbbe73-4CDUjkSzxiDgyhxRGe757PPbqJb4sjeDEuhNwbNd8",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  },
+  "labels": []
+}

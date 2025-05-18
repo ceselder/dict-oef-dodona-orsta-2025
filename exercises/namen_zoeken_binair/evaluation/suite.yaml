@@ -1,0 +1,20 @@
+- tab: "Binair Zoeken - Getal bij Naam"
+  testcases:
+    - expression: 'hoeveel(naam_getal_paren, "Sarah")'
+      return: 14
+    - expression: 'hoeveel(naam_getal_paren, "Els")'
+      return: 18
+    - expression: 'hoeveel(naam_getal_paren, "Pedro")'
+      return: 9
+    - expression: 'hoeveel(naam_getal_paren, "Jan")'
+      return: 32
+    - expression: 'hoeveel(naam_getal_paren, "Ben")'
+      return: 12
+    - expression: 'hoeveel(naam_getal_paren, "Fatima")'
+      return: 30
+    - expression: 'hoeveel(naam_getal_paren, "Mohammed")'
+      return: 64
+    - expression: 'hoeveel(naam_getal_paren, "OnbestaandeNaam")'
+      return: 0
+    - expression: 'hoeveel(naam_getal_paren, "Pieter")'
+      return: 0
