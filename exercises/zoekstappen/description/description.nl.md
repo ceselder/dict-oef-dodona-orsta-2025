@@ -1,4 +1,4 @@
-c## Opdracht
+## Opdracht
 
 Binair zoeken is een efficiënt algoritme om een element te vinden in een **gesorteerde** lijst (een lijst die op volgorde staat, bijvoorbeeld van klein naar groot). Het algoritme werkt volgens het "verdeel en heers"-principe: het deelt de lijst steeds in tweeën en bepaalt in welke helft het gezochte element zich zou moeten bevinden (als het überhaupt in de lijst zit).
 

@@ -1,34 +1,20 @@
-- tab: "Binair Zoeken - Zoekstappen"
+- tab: "Binair Zoeken - Getal bij Naam"
   testcases:
-    - stdin: "2 5 8 12 16 23 38 56 72 91\n23"
-      stdout: "16\n56\n23\n"
-
-    - stdin: "10 20 30 40 50 60 70 80 90 100\n35"
-      stdout: "50\n20\n30\n40\n"
-
-    - stdin: "5 10 15 20 25 30 35\n5"
-      stdout: "20\n10\n5\n"
-
-    - stdin: "5 10 15 20 25 30 35\n35"
-      stdout: "20\n30\n35\n"
-
-    - stdin: "5 10 15 20 25 30 35\n20"
-      stdout: "20\n"
-
-    - stdin: "5 10 15 20 25 30 35\n40"
-      stdout: "20\n30\n35\n"
-
-    - stdin: "5 10 15 20 25 30 35\n1"
-      stdout: "20\n10\n5\n"
-
-    - stdin: "42\n42"
-      stdout: "42\n"
-
-    - stdin: "42\n99"
-      stdout: "42\n"
-
-    - stdin: "\n42"
-      stdout: ""
-
-    - stdin: "5 7 7 7 10 12 15\n7"
-      stdout: "10\n7\n"
+    - expression: 'hoeveel(naam_getal_paren, "Sarah")'
+      return: 14
+    - expression: 'hoeveel(naam_getal_paren, "Els")'
+      return: 18
+    - expression: 'hoeveel(naam_getal_paren, "Pedro")'
+      return: 9
+    - expression: 'hoeveel(naam_getal_paren, "Jan")'
+      return: 32
+    - expression: 'hoeveel(naam_getal_paren, "Ben")'
+      return: 12
+    - expression: 'hoeveel(naam_getal_paren, "Fatima")'
+      return: 30
+    - expression: 'hoeveel(naam_getal_paren, "Mohammed")'
+      return: 64
+    - expression: 'hoeveel(naam_getal_paren, "OnbestaandeNaam")'
+      return: 0
+    - expression: 'hoeveel(naam_getal_paren, "Pieter")'
+      return: 0
