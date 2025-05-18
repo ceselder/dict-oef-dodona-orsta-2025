@@ -4,65 +4,54 @@ Bij lineair zoeken doorloop je een lijst element per element, wat efficiënt is 
 
 ## Opdracht
 
-Je krijgt een gesorteerde lijst met naam-getal paren. Elke entry is een tuple bestaande uit een naam (string) en een bijbehorend getal (integer). De lijst is gesorteerd op naam in alfabetische volgorde.
+In deze oefening werk je met een vaste, gesorteerde lijst van getal-naam paren. Deze lijst is reeds gesorteerd op getal (oplopend) en vervolgens op naam (alfabetisch) voor items met hetzelfde getal. De lijst moet je hardcoderen (direct in je code plaatsen) binnen je Python-functie.
 
-Schrijf een Python-functie genaamd `hoeveel(naam_getal_paren, gezochte_naam)` die:
-
-1. Als input een gesorteerde lijst `naam_getal_paren` en een `gezochte_naam` (string) ontvangt.
-2. Binair zoekt in de gesorteerde lijst `naam_getal_paren`.
-3. Als de `gezochte_naam` wordt gevonden als het eerste element van een tuple in de lijst, geef dan het tweede element (het getal) van die tuple terug.
-4. Als de `gezochte_naam` niet in de lijst voorkomt, geef dan het getal `0` terug.
-
-**Voorbeeld van een gesorteerde lijst:**
+De lijst die je functie intern moet gebruiken is:
 
 ```python
-gesorteerde_lijst_op_getal = [
-    ("Adam", 5),
-    ("Thomas", 6),
-    ("Amber", 7),
-    ("Daan", 8),
-    ("Pedro", 9),
-    ("Mila", 10),
-    ("Emma", 11),
-    ("Ben", 12),
-    ("Max", 13),
-    ("Finn", 14),
-    ("Sarah", 14),
-    ("David", 15),
-    ("Liam", 16),
-    ("Ian", 17),
-    ("Els", 18),
-    ("Yara", 18),
-    ("Bram", 19),
-    ("Luna", 20),
-    ("Noah", 21),
-    ("Hannah", 22),
-    ("Charlotte", 23),
-    ("Olivia", 24),
-    ("Julia", 25),
-    ("Sam", 26),
-    ("Elias", 27),
-    ("Maria", 28),
-    ("Sofia", 29),
-    ("Fatima", 30),
-    ("Roos", 31),
-    ("Jan", 32),
-    ("Omar", 33),
-    ("Zoe", 35),
-    ("Mohammed", 64)
+interne_data = [
+    (5, "Adam"), (6, "Thomas"), (7, "Amber"), (8, "Daan"), (9, "Pedro"),
+    (10, "Mila"), (11, "Emma"), (12, "Ben"), (13, "Max"), (14, "Finn"),
+    (14, "Sarah"), (15, "David"), (16, "Liam"), (17, "Ian"), (18, "Els"),
+    (18, "Yara"), (19, "Bram"), (20, "Luna"), (21, "Noah"), (22, "Hannah"),
+    (23, "Charlotte"), (24, "Olivia"), (25, "Julia"), (26, "Sam"), (27, "Elias"),
+    (28, "Maria"), (29, "Sofia"), (30, "Fatima"), (31, "Roos"), (32, "Jan"),
+    (33, "Omar"), (35, "Zoe"), (64, "Mohammed")
 ]
 ```
 
+Schrijf een Python-functie genaamd `zoek_naam_op_getal(gezocht_getal)` die:
+
+1.  Als input een `gezocht_getal` (integer) ontvangt.
+2.  Binair zoekt in de hierboven gespecificeerde, intern gedefinieerde lijst `interne_data`.
+3.  Als het `gezocht_getal` wordt gevonden als het eerste element van een tuple in de lijst, geef dan het tweede element (de naam) van die tuple terug.
+    - Als er meerdere tuples zijn met hetzelfde `gezocht_getal` (bijvoorbeeld `(14, "Finn")` en `(14, "Sarah")`), is het voldoende om de naam van één zo'n tuple terug te geven (specifiek, degene die overeenkomt met de eerste vermelding in de gesorteerde lijst, dus "Finn" voor 14, en "Els" voor 18). Om dit te garanderen, moet je bij een gevonden getal mogelijk verder naar links zoeken in de lijst als het vorige element hetzelfde getal heeft.
+4.  Als het `gezocht_getal` niet in de lijst voorkomt, geef dan de string `"Niet gevonden"` terug.
+
 **Voorbeeld:**
-Als `gezochte_naam` gelijk is aan `"Sarah"`, dan moet je functie `14` teruggeven.
-Als `gezochte_naam` gelijk is aan `"Fatima"`, dan moet je functie `30` teruggeven.
-Als `gezochte_naam` gelijk is aan `"Lisa"`, dan moet je functie `0` teruggeven (omdat "Lisa" niet in de lijst staat).
+Als `gezocht_getal` gelijk is aan `14`, dan moet je functie `"Finn"` teruggeven.
+Als `gezocht_getal` gelijk is aan `18`, dan moet je functie `"Els"` teruggeven.
+Als `gezocht_getal` gelijk is aan `30`, dan moet je functie `"Fatima"` teruggeven.
+Als `gezocht_getal` gelijk is aan `40`, dan moet je functie `"Niet gevonden"` teruggeven (omdat 40 niet als getal in de lijst staat).
 
 **Functiedefinitie:**
 
 ```python
-def hoeveel(naam_getal_paren, gezochte_naam):
-    # Jouw code hier
+
+    interne_data = [
+        (5, "Adam"), (6, "Thomas"), (7, "Amber"), (8, "Daan"), (9, "Pedro"),
+        (10, "Mila"), (11, "Emma"), (12, "Ben"), (13, "Max"), (14, "Finn"),
+        (14, "Sarah"), (15, "David"), (16, "Liam"), (17, "Ian"), (18, "Els"),
+        (18, "Yara"), (19, "Bram"), (20, "Luna"), (21, "Noah"), (22, "Hannah"),
+        (23, "Charlotte"), (24, "Olivia"), (25, "Julia"), (26, "Sam"), (27, "Elias"),
+        (28, "Maria"), (29, "Sofia"), (30, "Fatima"), (31, "Roos"), (32, "Jan"),
+        (33, "Omar"), (35, "Zoe"), (64, "Mohammed")
+    ]
+
+
+def zoek_naam_op_getal(gezocht_getal):
+
+    # Jouw code hier (implementeer binair zoeken)
     pass
 ```
 
