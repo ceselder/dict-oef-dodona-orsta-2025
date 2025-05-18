@@ -8,11 +8,15 @@ Je schrijft een functie "zoekstappen" die 2 argumenten meekrijgt, een lijst en e
 
 Het is de bedoeling dat je het getal zoekt in de lijst ben bij elke stap je het element in het midden van je zoekgebied uitprint.
 
+## Voorbeeld:
+
 ```python
 zoekstappen([10, 20, 30, 40, 50], 55)"
-        30
-        40
-        50
+
+#output:
+30
+40
+50
 
 ```
 
