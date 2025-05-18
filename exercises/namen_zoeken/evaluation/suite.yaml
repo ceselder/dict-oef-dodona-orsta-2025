@@ -1,20 +1,20 @@
-tab: "Lineair Zoeken - Getal bij Naam"
-testcases:
-  - expression: 'hoeveel("Sarah")'
-    return: 14
-  - expression: 'hoeveel("Els")'
-    return: 18
-  - expression: 'hoeveel("Pedro")'
-    return: 9
-  - expression: 'hoeveel("Jan")'
-    return: 22
-  - expression: 'hoeveel("Ben")'
-    return: 12
-  - expression: 'hoeveel("Fatima")'
-    return: 16
-  - expression: 'hoeveel("Mohammed")'
-    return: 20
-  - expression: 'hoeveel("OnbestaandeNaam")' # Test voor naam die niet in de lijst staat
-    return: 0
-  - expression: 'hoeveel("Pieter")' # Nog een test voor naam die niet in de lijst staat
-    return: 0
+- tab: "Lineair Zoeken - Getal bij Naam"
+  testcases:
+    - expression: 'hoeveel("Sarah")'
+      return: 14
+    - expression: 'hoeveel("Els")'
+      return: 18
+    - expression: 'hoeveel("Pedro")'
+      return: 9
+    - expression: 'hoeveel("Jan")'
+      return: 22
+    - expression: 'hoeveel("Ben")'
+      return: 12
+    - expression: 'hoeveel("Fatima")'
+      return: 16
+    - expression: 'hoeveel("Mohammed")'
+      return: 20
+    - expression: 'hoeveel("OnbestaandeNaam")' # Test voor naam die niet in de lijst staat
+      return: 0
+    - expression: 'hoeveel("Pieter")' # Nog een test voor naam die niet in de lijst staat
+      return: 0
