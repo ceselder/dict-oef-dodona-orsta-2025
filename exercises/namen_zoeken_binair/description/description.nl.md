@@ -11,7 +11,7 @@ De lijst die je functie intern moet gebruiken is:
 ```python
 interne_data = [
     (5, "Adam"), (6, "Thomas"), (7, "Amber"), (8, "Daan"), (9, "Pedro"),
-    (10, "Mila"), (11, "Emma"), (12, "Ben"), (13, "Max"), (14, "Finn"),
+    (10, "Mila"), (11, "Emma"), (12, "Ben"), (13, "Max"),
     (14, "Sarah"), (15, "David"), (16, "Liam"), (17, "Ian"), (18, "Els"),
     (18, "Yara"), (19, "Bram"), (20, "Luna"), (21, "Noah"),
     (23, "Charlotte"), (24, "Olivia"), (25, "Julia"), (26, "Sam"), (27, "Elias"),
@@ -25,7 +25,6 @@ Schrijf een Python-functie genaamd `zoek_naam_op_getal(gezocht_getal)` die:
 1.  Als input een `gezocht_getal` (integer) ontvangt.
 2.  Binair zoekt in de hierboven gespecificeerde, intern gedefinieerde lijst `interne_data`.
 3.  Als het `gezocht_getal` wordt gevonden als het eerste element van een tuple in de lijst, geef dan het tweede element (de naam) van die tuple terug.
-    - Als er meerdere tuples zijn met hetzelfde `gezocht_getal` (bijvoorbeeld `(14, "Finn")` en `(14, "Sarah")`), is het voldoende om de naam van één zo'n tuple terug te geven (specifiek, degene die overeenkomt met de eerste vermelding in de gesorteerde lijst, dus "Finn" voor 14, en "Els" voor 18). Om dit te garanderen, moet je bij een gevonden getal mogelijk verder naar links zoeken in de lijst als het vorige element hetzelfde getal heeft.
 4.  Als het `gezocht_getal` niet in de lijst voorkomt, geef dan de string `"Niet gevonden"` terug.
 
 **Voorbeeld:**
