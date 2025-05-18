@@ -2,64 +2,55 @@
 - tab: "Zoekstappen - Stdout Testen"
   testcases:
     - expression: "zoekstappen([], 10)"
-      stdout: "" # Geen iteraties, dus niets geprint
+      stdout: ""
 
     - expression: "zoekstappen([20], 20)"
-      stdout: "" # right-left > 1 is 1 > 1 (False), dus loop draait niet
+      stdout: ""
 
     - expression: "zoekstappen([20], 10)"
-      stdout: "" # right-left > 1 is 1 > 1 (False), dus loop draait niet
+      stdout: ""
 
     - expression: "zoekstappen([10, 20, 30, 40, 50], 30)"
       stdout: |
         30
-        # De loop stopt na de eerste stap omdat 30 gevonden wordt
 
     - expression: "zoekstappen([10, 20, 30, 40, 50], 10)"
       stdout: |
         30
         20
-        # Zoekt eerst in [0, 5), midden=2 (30). Gaat naar [0, 2), midden=1 (20). Gevonden.
 
     - expression: "zoekstappen([10, 20, 30, 40, 50], 50)"
       stdout: |
         30
         40
         50
-        # Zoekt in [0, 5), midden=2 (30). Gaat naar [2, 5), midden=3 (40). Gaat naar [3, 5), midden=4 (50). Gevonden.
 
     - expression: "zoekstappen([10, 20, 30, 40], 20)"
       stdout: |
         30
         20
-        # Zoekt in [0, 4), midden=2 (30). Gaat naar [0, 2), midden=1 (20). Gevonden.
 
     - expression: "zoekstappen([10, 20, 30, 40], 25)"
       stdout: |
         30
         20
-        # Zoekt in [0, 4), midden=2 (30). Gaat naar [0, 2), midden=1 (20). right-left wordt 1, loop stopt.
 
     - expression: "zoekstappen([10, 20, 30, 40, 50], 5)"
       stdout: |
         30
         20
-        # Zoekt in [0, 5), midden=2 (30). Gaat naar [0, 2), midden=1 (20). right-left wordt 1, loop stopt.
 
     - expression: "zoekstappen([10, 20, 30, 40, 50], 55)"
       stdout: |
         30
         40
         50
-        # Zoekt in [0, 5), midden=2 (30). Gaat naar [2, 5), midden=3 (40). Gaat naar [3, 5), midden=4 (50). right-left wordt 1, loop stopt.
 
     - expression: "zoekstappen([10, 20, 20, 30, 40], 20)"
       stdout: |
         20
-        # Zoekt in [0, 5), midden=2 (20). Gevonden. (Merk op dat de specifieke midden berekening hier index 2 vindt)
 
     - expression: "zoekstappen([10, 20, 20, 30, 40], 10)"
       stdout: |
         20
         10
-        # Zoekt in [0, 5), midden=2 (20). Gaat naar [0, 2), midden=1 (10). Gevonden.
