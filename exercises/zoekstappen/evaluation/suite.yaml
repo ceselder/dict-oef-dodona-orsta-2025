@@ -52,5 +52,5 @@
 
     - expression: "zoekstappen([10, 20, 30, 40], 10)"
       stdout: |
+        30
         20
-        10
