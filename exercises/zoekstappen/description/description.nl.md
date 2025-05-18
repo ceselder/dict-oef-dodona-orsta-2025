@@ -1,4 +1,3 @@
-```markdown
 # Zoekstappen bij Binair Zoeken
 
 ## Opdracht
@@ -33,6 +32,7 @@ Als het gezochte getal niet in de lijst voorkomt, print je de geteste getallen t
 ## Voorbeeld 1: Getal gevonden
 
 **Invoer:**
+
 ```
 
 2 5 8 12 16 23 38 56 72 91
@@ -41,6 +41,7 @@ Als het gezochte getal niet in de lijst voorkomt, print je de geteste getallen t
 ```
 
 **Uitvoer:**
+
 ```
 
 16
@@ -50,21 +51,23 @@ Als het gezochte getal niet in de lijst voorkomt, print je de geteste getallen t
 ```
 
 **Uitleg bij Voorbeeld 1:**
-1.  Initiële lijst: `2 5 8 12 16 23 38 56 72 91`. Het gezochte getal is `23`.
-    *   Het middelste element (bijv. index `(0+9)//2 = 4`) is `16`. Print `16`.
-    *   `23` is groter dan `16`, dus zoek verder in de rechterhelft: `23 38 56 72 91`.
-2.  Huidige deellijst: `23 38 56 72 91` (corresponderend met indices `5` t/m `9` in de originele lijst).
-    *   Het middelste element (bijv. index `(5+9)//2 = 7`) is `56`. Print `56`.
-    *   `23` is kleiner dan `56`, dus zoek verder in de linkerhelft van deze deellijst: `23 38`.
-3.  Huidige deellijst: `23 38` (corresponderend met indices `5` t/m `6` in de originele lijst).
-    *   Het middelste element (bijv. index `(5+6)//2 = 5`) is `23`. Print `23`.
-    *   `23` is gelijk aan `23`. Getal gevonden.
 
-*(Noot: De exacte keuze van het "middelste" element bij een deellijst met een even aantal elementen kan afhangen van de implementatie, bijvoorbeeld `floor((low + high) / 2)` of `ceil((low + high) / 2)`. Een veelgebruikte methode is `mid = low + (high - low) // 2` of simpelweg `mid = (low + high) // 2` met integerdeling, wat meestal naar beneden afrondt.)*
+1.  Initiële lijst: `2 5 8 12 16 23 38 56 72 91`. Het gezochte getal is `23`.
+    - Het middelste element (bijv. index `(0+9)//2 = 4`) is `16`. Print `16`.
+    - `23` is groter dan `16`, dus zoek verder in de rechterhelft: `23 38 56 72 91`.
+2.  Huidige deellijst: `23 38 56 72 91` (corresponderend met indices `5` t/m `9` in de originele lijst).
+    - Het middelste element (bijv. index `(5+9)//2 = 7`) is `56`. Print `56`.
+    - `23` is kleiner dan `56`, dus zoek verder in de linkerhelft van deze deellijst: `23 38`.
+3.  Huidige deellijst: `23 38` (corresponderend met indices `5` t/m `6` in de originele lijst).
+    - Het middelste element (bijv. index `(5+6)//2 = 5`) is `23`. Print `23`.
+    - `23` is gelijk aan `23`. Getal gevonden.
+
+_(Noot: De exacte keuze van het "middelste" element bij een deellijst met een even aantal elementen kan afhangen van de implementatie, bijvoorbeeld `floor((low + high) / 2)` of `ceil((low + high) / 2)`. Een veelgebruikte methode is `mid = low + (high - low) // 2` of simpelweg `mid = (low + high) // 2` met integerdeling, wat meestal naar beneden afrondt.)_
 
 ## Voorbeeld 2: Getal niet gevonden
 
 **Invoer:**
+
 ```
 
 10 20 30 40 50 60 70 80 90 100
@@ -73,6 +76,7 @@ Als het gezochte getal niet in de lijst voorkomt, print je de geteste getallen t
 ```
 
 **Uitvoer:**
+
 ```
 
 50
@@ -83,17 +87,17 @@ Als het gezochte getal niet in de lijst voorkomt, print je de geteste getallen t
 ```
 
 **Uitleg bij Voorbeeld 2:**
+
 1.  Lijst: `10 20 30 40 50 60 70 80 90 100`, zoek `35`.
-    *   Midden: `50` (index `(0+9)//2=4`). Print `50`.
-    *   `35 < 50`. Zoek links: `10 20 30 40` (indices `0` t/m `3`).
+    - Midden: `50` (index `(0+9)//2=4`). Print `50`.
+    - `35 < 50`. Zoek links: `10 20 30 40` (indices `0` t/m `3`).
 2.  Deellijst: `10 20 30 40`.
-    *   Midden: `20` (index `(0+3)//2=1`). Print `20`.
-    *   `35 > 20`. Zoek rechts: `30 40` (indices `2` t/m `3`).
+    - Midden: `20` (index `(0+3)//2=1`). Print `20`.
+    - `35 > 20`. Zoek rechts: `30 40` (indices `2` t/m `3`).
 3.  Deellijst: `30 40`.
-    *   Midden: `30` (index `(2+3)//2=2`). Print `30`.
-    *   `35 > 30`. Zoek rechts: `40` (index `3` t/m `3`).
+    - Midden: `30` (index `(2+3)//2=2`). Print `30`.
+    - `35 > 30`. Zoek rechts: `40` (index `3` t/m `3`).
 4.  Deellijst: `40`.
-    *   Midden: `40` (index `(3+3)//2=3`). Print `40`.
-    *   `35 < 40`. Zoek links. De deellijst wordt nu leeg (bijv. `high` wordt kleiner dan `low`).
+    - Midden: `40` (index `(3+3)//2=3`). Print `40`.
+    - `35 < 40`. Zoek links. De deellijst wordt nu leeg (bijv. `high` wordt kleiner dan `low`).
 5.  Getal `35` niet gevonden. De geprinte stappen zijn de getallen die tijdens de zoektocht zijn vergeleken.
-```
