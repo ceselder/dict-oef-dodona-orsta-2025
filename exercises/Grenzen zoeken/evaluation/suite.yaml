@@ -1,0 +1,13 @@
+- tab: "scores"
+  testcases:
+    - expression: "update_grenzen(0, 19, True)"
+      return: [10, 19]
+
+    - expression: "update_grenzen(3, 10, False)"
+      return: [3, 5]
+
+    - expression: "update_grenzen(10, 20, True)"
+      return: [15, 20]
+
+    - expression: "update_grenzen(10, 20, False)"
+      return: [10, 14]
