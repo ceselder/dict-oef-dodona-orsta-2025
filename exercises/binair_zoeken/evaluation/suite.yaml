@@ -1,0 +1,26 @@
+- tab: "Binair Zoeken"
+  testcases:
+    - expression: "zoek_binair([2, 5, 8, 12, 16, 23, 38, 56, 72, 91], 23)"
+      return: 5
+    - expression: "zoek_binair([2, 5, 8, 12, 16, 23, 38, 56, 72, 91], 5)"
+      return: 1
+    - expression: "zoek_binair([2, 5, 8, 12, 16, 23, 38, 56, 72, 91], 91)"
+      return: 9
+    - expression: "zoek_binair([2, 5, 8, 12, 16, 23, 38, 56, 72, 91], 2)"
+      return: 0
+    - expression: "zoek_binair([2, 5, 8, 12, 16, 23, 38, 56, 72, 91], 50)"
+      return: -1
+    - expression: "zoek_binair([2, 5, 8, 12, 16, 23, 38, 56, 72, 91], 1)"
+      return: -1
+    - expression: "zoek_binair([2, 5, 8, 12, 16, 23, 38, 56, 72, 91], 100)"
+      return: -1
+    - expression: "zoek_binair([], 10)"
+      return: -1
+    - expression: "zoek_binair([15], 15)"
+      return: 0
+    - expression: "zoek_binair([15], 10)"
+      return: -1
+    - expression: "zoek_binair([1, 3, 5, 7, 9, 11], 7)"
+      return: 3
+    - expression: "zoek_binair([1, 3, 5, 7, 9, 11], 6)"
+      return: -1
