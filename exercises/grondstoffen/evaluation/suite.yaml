@@ -2,16 +2,16 @@
 
   testcases:
     - expression: 'total_resource("grondstof_hout")'
-      return: 16
+      return: 15
 
     - expression: 'total_resource("grondstof_steen")'
-      return: 21
+      return: 12
 
     - expression: 'total_resource("grondstof_goud")'
-      return: 7
+      return: 2
 
     - expression: 'total_resource("vijand_goblin")'
-      return: 0
+      return: 10
 
     - expression: 'total_resource("grondstof_diamant")'
       return: 0
