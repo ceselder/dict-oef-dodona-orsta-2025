@@ -9,7 +9,7 @@ def zoekrichting(getallen, doel, midden):
     # jouw code hier
 ```
 
-### ✅ Voorbeelden
+### Voorbeelden
 
 ```python
 >>> zoekrichting([2, 4, 6, 8, 10, 12], 10, 2)
@@ -21,16 +21,6 @@ def zoekrichting(getallen, doel, midden):
 >>> zoekrichting([2, 4, 6, 8, 10, 12], 2, 3)
 'links'  # want 8 > 2
 ```
-
----
-
-### 💡 Hints
-
-- Je mag ervan uitgaan dat `midden` een geldige index is.
-- De lijst is gesorteerd in oplopende volgorde.
-- Vergelijk `getallen[midden]` met `doel`.
-
----
 
 ### Voorbeelden
 
