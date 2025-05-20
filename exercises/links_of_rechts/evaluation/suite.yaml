@@ -1,0 +1,8 @@
+- tab: "scores"
+  testcases:
+    - expression: 'hoeveel("Sarah")'
+      return: 14
+    - expression: 'hoeveel("Els")'
+      return: 18
+    - expression: 'hoeveel("Pedro")'
+      return: 9
