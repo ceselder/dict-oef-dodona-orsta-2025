@@ -13,8 +13,6 @@ Schrijf een Python functie genaamd `geavanceerd_zoeken(lijst, zoek_waarde)`.
   - Als de lijst **niet gesorteerd** is: geef de string `"niet gesorteerd"` terug.
   - Als de lijst **wel gesorteerd** is: voer binair zoeken uit en geef het resultaat terug in het formaat `(gevonden_waarde, aantal_stappen)`, net als bij de vorige oefeningen.
 
-````
-
 Als je het getal niet vind, geef dan -1 terug.
 
 ## Voorbeelden
@@ -34,4 +32,4 @@ geavanceerd_zoeken([], 10)
 
 geavanceerd_zoeken([42], 42)
 # dit moet [42, 1] teruggeven
-````
+```
