@@ -18,6 +18,7 @@ Als je het getal niet vind, geef dan -1 terug.
 ## Voorbeelden
 
 ```python
+
 geavanceerd_zoeken([2, 5, 8, 12, 16, 23, 38, 56, 72, 91], 23)
 # dit moet [23, 3] teruggeven
 

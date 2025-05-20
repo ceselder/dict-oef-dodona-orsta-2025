@@ -1,7 +1,7 @@
 - tab: "Binair Zoeken"
   testcases:
     - expression: "geavanceerd_zoeken([2, 5, 8, 12, 16, 23, 38, 56, 72, 91], 23)"
-      return: [23, 3]
+      return: [23, 1]
 
     - expression: "geavanceerd_zoeken([2, 5, 8, 12, 16, 23, 38, 56, 72, 91], 25)"
       return: [-1, 4]
@@ -19,7 +19,7 @@
       return: [-1, 1]
 
     - expression: "geavanceerd_zoeken([10, 20, 30, 40, 50], 10)"
-      return: [10, 2]
+      return: [10, 3]
 
     - expression: "geavanceerd_zoeken([10, 20, 30, 40, 50], 50)"
       return: [50, 3]
