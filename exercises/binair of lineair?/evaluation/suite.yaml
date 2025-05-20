@@ -1,0 +1,31 @@
+- tab: "Binair Zoeken"
+  testcases:
+    - expression: "geavanceerd_zoeken([2, 5, 8, 12, 16, 23, 38, 56, 72, 91], 23)"
+      return: [23, 3]
+
+    - expression: "geavanceerd_zoeken([2, 5, 8, 12, 16, 23, 38, 56, 72, 91], 25)"
+      return: [-1, 4]
+
+    - expression: "geavanceerd_zoeken([1, 3, 2, 4, 5], 3)"
+      return: "niet gesorteerd"
+
+    - expression: "geavanceerd_zoeken([], 10)"
+      return: [-1, 0]
+
+    - expression: "geavanceerd_zoeken([42], 42)"
+      return: [42, 1]
+
+    - expression: "geavanceerd_zoeken([42], 10)"
+      return: [-1, 1]
+
+    - expression: "geavanceerd_zoeken([10, 20, 30, 40, 50], 10)"
+      return: [10, 2]
+
+    - expression: "geavanceerd_zoeken([10, 20, 30, 40, 50], 50)"
+      return: [50, 3]
+
+    - expression: "geavanceerd_zoeken([10, 20, 30, 40, 50], 35)"
+      return: [-1, 3]
+
+    - expression: "geavanceerd_zoeken([5, 1, 8, 3, 9], 8)"
+      return: "niet gesorteerd"
