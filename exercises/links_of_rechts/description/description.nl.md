@@ -30,12 +30,12 @@ Voeg deze tests toe onderaan je code om te checken of je functie goed werkt:
 zoekrichting([1, 3, 5, 7, 9], 5, 2)
 # dit moet 'gevonden' retourneren
 
-zoekrichting([1, 3, 5, 7, 9], 7, 1) == 'rechts'
+zoekrichting([1, 3, 5, 7, 9], 7, 1)
 # dit moet 'rechts' retourneren
 
-zoekrichting([1, 3, 5, 7, 9], 3, 3) == 'links'
+zoekrichting([1, 3, 5, 7, 9], 3, 3)
 # dit moet 'links' retourneren
 
-zoekrichting([10, 20, 30, 40, 50], 45, 3) == 'rechts'
+zoekrichting([10, 20, 30, 40, 50], 45, 3)
 # dit moet 'rechts' retourneren
 ```
