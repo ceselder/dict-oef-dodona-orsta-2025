@@ -28,14 +28,14 @@ Voeg deze tests toe onderaan je code om te checken of je functie goed werkt:
 
 ```python
 zoekrichting([1, 3, 5, 7, 9], 5, 2)
-# dit moer 'gevonden' retourneren
+# dit moet 'gevonden' retourneren
 
 zoekrichting([1, 3, 5, 7, 9], 7, 1) == 'rechts'
-# dit moer 'rechts' retourneren
+# dit moet 'rechts' retourneren
 
 zoekrichting([1, 3, 5, 7, 9], 3, 3) == 'links'
-# dit moer 'links' retourneren
+# dit moet 'links' retourneren
 
 zoekrichting([10, 20, 30, 40, 50], 45, 3) == 'rechts'
-# dit moer 'rechts' retourneren
+# dit moet 'rechts' retourneren
 ```
