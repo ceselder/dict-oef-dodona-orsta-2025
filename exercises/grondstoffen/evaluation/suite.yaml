@@ -1,32 +1,27 @@
 - tab: "Oogsten op het Pad"
-  # Defineer de data die de testcases nodig hebben in een context
-  context:
-    - command: "python3"
-      source: |
-        # Hier definiëren we de lijst met data die het "pad" voorstelt
-        pad_gebeurtenissen_data = [
-            ("stap", 1),
-            ("grondstof_hout", 5),
-            ("stap", 1),
-            ("vijand_goblin", 10),
-            ("grondstof_steen", 8),
-            ("stap", 1),
-            ("grondstof_hout", 3),
-            ("grondstof_goud", 2),
-            ("vijand_ork", 15),
-            ("stap", 1),
-            ("grondstof_steen", 4),
-            ("vijand_trol", 20),
-            ("grondstof_hout", 7),
-            ("grondstof_goud", 5),
-            ("stap", 1),
-            ("vijand_goblin", 8),
-            ("grondstof_steen", 9),
-            ("grondstof_hout", 1), # Extra beetje hout gevonden
-            ("stap", 1),
-        ]
 
   testcases:
+    - statement: 'pad_gebeurtenissen_data = [
+        ("stap", 1),
+        ("grondstof_hout", 5),
+        ("stap", 1),
+        ("vijand_goblin", 10),
+        ("grondstof_steen", 8),
+        ("stap", 1),
+        ("grondstof_hout", 3),
+        ("grondstof_goud", 2),
+        ("vijand_ork", 15),
+        ("stap", 1),
+        ("grondstof_steen", 4),
+        ("vijand_trol", 20),
+        ("grondstof_hout", 7),
+        ("grondstof_goud", 5),
+        ("stap", 1),
+        ("vijand_goblin", 8),
+        ("grondstof_steen", 9),
+        ("grondstof_hout", 1),
+        ("stap", 1),
+        ]'
     - expression: 'total_resource(pad_gebeurtenissen_data, "grondstof_hout")'
       return: 16
 
