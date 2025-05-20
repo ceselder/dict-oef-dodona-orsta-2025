@@ -49,9 +49,7 @@ Als `gezocht_getal` gelijk is aan `40`, dan moet je functie `"Niet gevonden"` te
 
 
 def zoek_naam_op_getal(gezocht_getal):
-
     # Jouw code hier (implementeer binair zoeken)
-    pass
 ```
 
 Implementeer binair zoeken om efficiënt door de gesorteerde lijst te navigeren.
