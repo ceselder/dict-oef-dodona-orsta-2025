@@ -1,17 +1,17 @@
 - tab: "Oogsten op het Pad"
 
   testcases:
-    - expression: 'total_resource(pad_gebeurtenissen, "grondstof_hout")'
+    - expression: 'total_resource("grondstof_hout")'
       return: 16
 
-    - expression: 'total_resource(pad_gebeurtenissen, "grondstof_steen")'
+    - expression: 'total_resource("grondstof_steen")'
       return: 21
 
-    - expression: 'total_resource(pad_gebeurtenissen, "grondstof_goud")'
+    - expression: 'total_resource("grondstof_goud")'
       return: 7
 
-    - expression: 'total_resource(pad_gebeurtenissen, "vijand_goblin")'
+    - expression: 'total_resource("vijand_goblin")'
       return: 0
 
-    - expression: 'total_resource(pad_gebeurtenissen, "grondstof_diamant")'
+    - expression: 'total_resource("grondstof_diamant")'
       return: 0
